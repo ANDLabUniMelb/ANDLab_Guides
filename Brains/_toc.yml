@@ -1,0 +1,23 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+parts:
+  - caption: "1. DARIS"
+    chapters:
+      - file: Daris/Daris
+      - file: Daris/Downloading
+      - file: Daris/Renaming
+
+  - caption: "2. Using Spartan"
+    chapters:
+      - file: Spartan/Spartan Basics
+      - file: Spartan/Running
+
+  - caption: "3. 3D Printing"
+    chapters:
+      - file: Printing/Basics
+      - file: Printing/Fablab
+      - file: Printing/Creator

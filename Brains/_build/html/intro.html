@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,11 +60,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1a. Prerequisites" href="gettingstarted/prereq.html" />
+    <link rel="next" title="1a. Daris" href="Daris/Daris.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -170,28 +172,23 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Getting Started</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. DARIS</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/prereq.html">1a. Prerequisites</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/vscode.html">1b. Visual Studio Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/chatgpt.html">1c. Learning Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Daris/Daris.html">1a. Daris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Daris/Downloading.html">1b. Downloading images from DARIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Daris/Renaming.html">1c. Nifti download</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Data Wrangling</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Using Spartan</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="python/codingbasics.html">2a. Coding Fundamentals</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="python/pandas.html">2b. Data Wrangling 101</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="python/dfcommands.html">Extra: Pandas DataFrame Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spartan/Running.html">2b.  How to run the script</a></li>
 </ul>
-</details></li>
-<li class="toctree-l1"><a class="reference internal" href="python/excel.html">2c. Python, Pandas &amp; Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/jupyter.html">2d. Jupyter Notebook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/pythontoR.html">2e. Python &amp; R</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Miscellaneous</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. 3D Printing</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="other/bash.html">3a. Basic Shell (Bash/Zsh/Cmd)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="other/github.html">3b. GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="other/spartan.html">3c. Spartan (UoM HPC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Printing/Basics.html">3a. Printing at Melbourne Univeristy</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="Printing/Fablab.html">3b. FABLAB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Printing/Creator.html">3c. Telstra creator space</a></li>
+
 </ul>
 
     </div>
@@ -337,7 +334,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-to-the-and-lab-coding-and-data-wrangling-101-guide">Welcome to The AND Lab Coding and Data Wrangling 101 Guide!</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-to-the-and-lab-guide-on-how-to-3d-models-of-brains">Welcome to The AND Lab guide on how to 3D models of brains</a><ul class="nav section-nav flex-column">
 </ul>
 </li>
 </ul>
@@ -353,37 +350,35 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
-<section id="welcome-to-the-and-lab-coding-and-data-wrangling-101-guide">
-<h2>Welcome to The AND Lab Coding and Data Wrangling 101 Guide!<a class="headerlink" href="#welcome-to-the-and-lab-coding-and-data-wrangling-101-guide" title="Link to this heading">#</a></h2>
-<p>This guide aims to introduce readers to coding basics and data wrangling skills. We hope that this sets you on your first step towards taking on more data analysis roles.</p>
+<section id="welcome-to-the-and-lab-guide-on-how-to-3d-models-of-brains">
+<h2>Welcome to The AND Lab guide on how to 3D models of brains<a class="headerlink" href="#welcome-to-the-and-lab-guide-on-how-to-3d-models-of-brains" title="Link to this heading">#</a></h2>
+<p>This model aims to take you through the process of dowloading the files, converting them to the stl file type necessary for printing then the process of slicing and queueing models to be printed</p>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Getting Started</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">1. DARIS</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/prereq.html">1a. Prerequisites</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/vscode.html">1b. Visual Studio Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/chatgpt.html">1c. Learning Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Daris/Daris.html">1a. Daris</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Daris/Downloading.html">1b. Downloading images from DARIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Daris/Renaming.html">1c. Nifti download</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Data Wrangling</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Using Spartan</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="python/codingbasics.html">2a. Coding Fundamentals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/pandas.html">2b. Data Wrangling 101</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/excel.html">2c. Python, Pandas &amp; Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/jupyter.html">2d. Jupyter Notebook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/pythontoR.html">2e. Python &amp; R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Spartan/Running.html">2b.  How to run the script</a></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Miscellaneous</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. 3D Printing</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="other/bash.html">3a. Basic Shell (Bash/Zsh/Cmd)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="other/github.html">3b. GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="other/spartan.html">3c. Spartan (UoM HPC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Printing/Basics.html">3a. Printing at Melbourne Univeristy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Printing/Basics.html#a-printing">3a. Printing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Printing/Fablab.html">3b. FABLAB</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Printing/Creator.html">3c. Telstra creator space</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Printing/Creator.html#key-slicing-settings">Key slicing settings</a></li>
 </ul>
 </div>
 <blockquote>
-<div><p>Version 1.1.2. David Cui. March 2025.</p>
+<div><p>Version 1.1.1 Indi Berberich. April 2026.</p>
 </div></blockquote>
 </section>
 </section>
@@ -419,11 +414,11 @@
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="gettingstarted/prereq.html"
+       href="Daris/Daris.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">1a. Prerequisites</p>
+        <p class="prev-next-title">1a. Daris</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -445,7 +440,7 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-to-the-and-lab-coding-and-data-wrangling-101-guide">Welcome to The AND Lab Coding and Data Wrangling 101 Guide!</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-to-the-and-lab-guide-on-how-to-3d-models-of-brains">Welcome to The AND Lab guide on how to 3D models of brains</a><ul class="nav section-nav flex-column">
 </ul>
 </li>
 </ul>
