@@ -3,3 +3,78 @@
 
 format: jb-book
 root: GuideIndex
+
+chapters:
+#===============================================CODING=====================================
+- file: ../Coding/index
+  sections:
+
+    - file: ../Coding/gettingstarted/index
+      sections:
+        - file: ../Coding/gettingstarted/prereq
+        - file: ../Coding/gettingstarted/vscode
+        - file: ../Coding/gettingstarted/chatgpt
+
+    - file: ../Coding/python/index
+      sections:
+        - file: ../Coding/python/codingbasics
+        - file: ../Coding/python/pandas
+        - file: ../Coding/python/dfcommands
+        - file: ../Coding/python/excel
+        - file: ../Coding/python/jupyter
+        - file: ../Coding/python/pythontoR
+
+    - file: ../Coding/other/index
+      sections:
+        - file: ../Coding/other/bash
+        - file: ../Coding/other/github
+        - file: ../Coding/other/spartan
+#===============================================JSPsych=======================================
+- file: ../JSPsych/index
+  sections:
+    - file: ../JSPsych/introduction
+    - file: ../JSPsych/introduction_to_files
+    - file: ../JSPsych/individual_file
+    - file: ../JSPsych/combining_individual_files
+    - file: ../JSPsych/uploading
+    - file: ../JSPsych/data
+    - file: ../JSPsych/other_things
+    - file: ../JSPsych/trouble_shooting
+  
+# =====================================Pavlovia========================================
+- file: ../Pavlovia/index
+  sections:
+    - file: ../Pavlovia/pavlovia
+
+  #============================================fMRI=========================================
+- file: ../Account/index
+  sections: 
+    - file: ../Account/Getting_Access
+    - file: ../fMRI/Daris
+    - file: ../fMRI/Mediaflux
+    - file: ../fMRI/BIDS
+    - file: ../fMRI/Preprocessing
+
+#================================================Printing==========================================
+- file: ../Daris/index
+  sections:
+    - file: ../Daris/Daris
+    - file: ../Daris/Downloading
+    - file: ../Daris/Renaming
+
+- file: ../Spartan/index
+  sections:
+    - file: ../Spartan/Spartan_Basics
+    - file: ../Spartan/Running
+
+- file: ../Printing/index
+  sections:
+    - file: ../Printing/Basics
+    - file: ../Printing/Fablab
+    - file: ../Printing/Creator
+
+#=====================================================Cleaning==========================================
+- file: ../Files/index
+  sections:
+    - file: ../Files/chatgpt
+    - file: ../Files/Downloading
