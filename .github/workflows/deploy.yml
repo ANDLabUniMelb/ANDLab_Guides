@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -62,16 +62,14 @@ jobs:
 
       - name: Prepare combined site
         run: |
+          rm -rf site
           mkdir -p site/Coding
           mkdir -p site/Brains
           mkdir -p site/fMRI_Preprocessing
           mkdir -p site/Questionnaire
           mkdir -p site/Cleaning
 
-          # Use Index as the main landing page at site root
           cp -R Index/_build/html/* site/
-
-          # Put the other books in subfolders
           cp -R Coding/_build/html/* site/Coding/
           cp -R Brains/_build/html/* site/Brains/
           cp -R fMRI_Preprocessing/_build/html/* site/fMRI_Preprocessing/
@@ -79,6 +77,10 @@ jobs:
           cp -R Cleaning/_build/html/* site/Cleaning/
 
           touch site/.nojekyll
+
+      - name: Check site files
+        run: |
+          find site -name "*.html"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
