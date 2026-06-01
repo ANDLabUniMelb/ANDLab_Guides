@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -64,7 +64,7 @@
     <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1a. Prerequisites" href="gettingstarted/prereq.html" />
+    <link rel="next" title="STEPS" href="Files/chatgpt.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -170,28 +170,17 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Getting Started</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Cleaning Questionnaires</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/prereq.html">1a. Prerequisites</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/vscode.html">1b. Visual Studio Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/chatgpt.html">1c. Learning Resources</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Data Wrangling</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="python/codingbasics.html">2a. Coding Fundamentals</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="python/pandas.html">2b. Data Wrangling 101</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="python/dfcommands.html">Extra: Pandas DataFrame Methods</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1"><a class="reference internal" href="python/excel.html">2c. Python, Pandas &amp; Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/jupyter.html">2d. Jupyter Notebook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/pythontoR.html">2e. Python &amp; R</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Miscellaneous</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="other/bash.html">3a. Basic Shell (Bash/Zsh/Cmd)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="other/github.html">3b. GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="other/spartan.html">3c. Spartan (UoM HPC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/chatgpt.html">STEPS</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="Files/Downloading.html">Navigating Pavlovia to find the data</a></li>
 </ul>
 
     </div>
@@ -337,9 +326,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-to-the-and-lab-coding-and-data-wrangling-101-guide">Welcome to The AND Lab Coding and Data Wrangling 101 Guide!</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-to-the-and-lab-guide-on-questionnaire-data-cleaning">Welcome to The AND Lab guide on questionnaire data cleaning</a></li>
 </ul>
             </nav>
         </div>
@@ -353,37 +340,25 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
-<section id="welcome-to-the-and-lab-coding-and-data-wrangling-101-guide">
-<h2>Welcome to The AND Lab Coding and Data Wrangling 101 Guide!<a class="headerlink" href="#welcome-to-the-and-lab-coding-and-data-wrangling-101-guide" title="Link to this heading">#</a></h2>
-<p>This guide aims to introduce readers to coding basics and data wrangling skills. We hope that this sets you on your first step towards taking on more data analysis roles.</p>
+<section id="welcome-to-the-and-lab-guide-on-questionnaire-data-cleaning">
+<h2>Welcome to The AND Lab guide on questionnaire data cleaning<a class="headerlink" href="#welcome-to-the-and-lab-guide-on-questionnaire-data-cleaning" title="Link to this heading">#</a></h2>
+<p>In the Affective Neuroscience and Development Lab, an experiment was undertaken to investigate decision making. Participants were involved in a series of tasks while in an MRI. Along with these tasks, there were questionnaires that participants answered beforehand. In order to undertand the raw data from the questionnaires, it is important to clean up the data. This data task involved processing teh data and exporting it from the pavlovia files, using the program R. By extracting the survey responses adn participant data, and converting it into a new Excel file, the data was organised in a standardised form that could be used to compare data across participants.</p>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Getting Started</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Cleaning Questionnaires</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/prereq.html">1a. Prerequisites</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/vscode.html">1b. Visual Studio Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted/chatgpt.html">1c. Learning Resources</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Data Wrangling</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="python/codingbasics.html">2a. Coding Fundamentals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/pandas.html">2b. Data Wrangling 101</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/excel.html">2c. Python, Pandas &amp; Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/jupyter.html">2d. Jupyter Notebook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python/pythontoR.html">2e. Python &amp; R</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Miscellaneous</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="other/bash.html">3a. Basic Shell (Bash/Zsh/Cmd)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="other/github.html">3b. GitHub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="other/spartan.html">3c. Spartan (UoM HPC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/chatgpt.html">STEPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/chatgpt.html#step-1-setting-up-r-studio">Step 1: Setting up R studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/chatgpt.html#step-2-setting-up-file-paths">Step 2: Setting up File Paths</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/chatgpt.html#step-3-loading-the-csv-files">Step 3: Loading the CSV files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/chatgpt.html#step-4-extracting-participant-information">Step 4: extracting participant information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/chatgpt.html#step-5-extracting-cnbt-responses">Step 5: Extracting CNBT responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/chatgpt.html#step-6-cpnvert-the-data-to-long-format">Step 6: Cpnvert the data to Long Format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/chatgpt.html#step-7-saving-the-excel-file">Step 7: Saving the Excel file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Files/Downloading.html">Navigating Pavlovia to find the data</a></li>
 </ul>
 </div>
 <blockquote>
-<div><p>Version 1.1.2. David Cui. March 2025.</p>
+<div><p>Version 1.1.1. Indi Berberich and Reia Din. March 2025.</p>
 </div></blockquote>
 </section>
 </section>
@@ -419,11 +394,11 @@
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="gettingstarted/prereq.html"
+       href="Files/chatgpt.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">1a. Prerequisites</p>
+        <p class="prev-next-title">STEPS</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -445,9 +420,7 @@
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-to-the-and-lab-coding-and-data-wrangling-101-guide">Welcome to The AND Lab Coding and Data Wrangling 101 Guide!</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-to-the-and-lab-guide-on-questionnaire-data-cleaning">Welcome to The AND Lab guide on questionnaire data cleaning</a></li>
 </ul>
   </nav></div>
 

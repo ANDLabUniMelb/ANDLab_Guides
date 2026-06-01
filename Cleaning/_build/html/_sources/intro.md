@@ -1,9 +1,9 @@
 # Introduction
-## Welcome to The AND Lab Coding and Data Wrangling 101 Guide!
+## Welcome to The AND Lab guide on questionnaire data cleaning
 
-This guide aims to introduce readers to coding basics and data wrangling skills. We hope that this sets you on your first step towards taking on more data analysis roles.
+In the Affective Neuroscience and Development Lab, an experiment was undertaken to investigate decision making. Participants were involved in a series of tasks while in an MRI. Along with these tasks, there were questionnaires that participants answered beforehand. In order to undertand the raw data from the questionnaires, it is important to clean up the data. This data task involved processing teh data and exporting it from the pavlovia files, using the program R. By extracting the survey responses adn participant data, and converting it into a new Excel file, the data was organised in a standardised form that could be used to compare data across participants. 
 
 ```{tableofcontents}
 ```
 
-> Version 1.1.2. David Cui. March 2025.
+> Version 1.1.1. Indi Berberich and Reia Din. March 2025.
