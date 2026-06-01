@@ -12,6 +12,10 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -40,6 +44,10 @@ jobs:
         run: |
           jupyter-book build Coding
 
+      - name: Build Brains
+        run: |
+          jupyter-book build Brains
+
       - name: Build fMRI_Preprocessing
         run: |
           jupyter-book build fMRI_Preprocessing
@@ -48,19 +56,27 @@ jobs:
         run: |
           jupyter-book build Questionnaire
 
+      - name: Build Cleaning
+        run: |
+          jupyter-book build Cleaning
+
       - name: Prepare combined site
         run: |
           mkdir -p site/Coding
+          mkdir -p site/Brains
           mkdir -p site/fMRI_Preprocessing
           mkdir -p site/Questionnaire
+          mkdir -p site/Cleaning
 
           # Use Index as the main landing page at site root
           cp -R Index/_build/html/* site/
 
           # Put the other books in subfolders
           cp -R Coding/_build/html/* site/Coding/
+          cp -R Brains/_build/html/* site/Brains/
           cp -R fMRI_Preprocessing/_build/html/* site/fMRI_Preprocessing/
           cp -R Questionnaire/_build/html/* site/Questionnaire/
+          cp -R Cleaning/_build/html/* site/Cleaning/
 
           touch site/.nojekyll
 

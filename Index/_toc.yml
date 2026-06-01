@@ -46,7 +46,7 @@ chapters:
   sections:
     - file: ../Pavlovia/pavlovia
 
-  #============================================fMRI=========================================
+#============================================fMRI=========================================
 - file: ../Account/index
   sections: 
     - file: ../Account/Getting_Access
@@ -56,25 +56,19 @@ chapters:
     - file: ../fMRI/Preprocessing
 
 #================================================Printing==========================================
-- file: ../Daris/index
+- file: ../Brains/index
   sections:
-    - file: ../Daris/Daris
-    - file: ../Daris/Downloading
-    - file: ../Daris/Renaming
-
-- file: ../Spartan/index
-  sections:
-    - file: ../Spartan/Spartan_Basics
-    - file: ../Spartan/Running
-
-- file: ../Printing/index
-  sections:
-    - file: ../Printing/Basics
-    - file: ../Printing/Fablab
-    - file: ../Printing/Creator
+    - file: ../Brains/Daris/Daris
+    - file: ../Brains/Daris/Downloading
+    - file: ../Brains/Daris/Renaming
+    - file: ../Brains/Spartan/Spartan_Basics
+    - file: ../Brains/Spartan/Running
+    - file: ../Brains/Printing/Basics
+    - file: ../Brains/Printing/Fablab
+    - file: ../Brains/Printing/Creator
 
 #=====================================================Cleaning==========================================
-- file: ../Files/index
+- file: ../Cleaning/Files/index
   sections:
-    - file: ../Files/chatgpt
-    - file: ../Files/Downloading
+    - file: ../Cleaning/Files/chatgpt
+    - file: ../Cleaning/Files/Downloading
